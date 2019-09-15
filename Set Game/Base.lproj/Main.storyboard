@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SetViewController" customModule="Set_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJa-cv-sfa">
+                                <rect key="frame" x="43" y="543" width="130" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Deal More Cards">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNb-na-DBw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-BU-HHm">
+                                <rect key="frame" x="43" y="603" width="130" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Hint">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getHint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmR-zx-SHA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi4-46-aQG" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uh4-ep-4rx" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="125" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-uQ-6Nb" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="230" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXk-Im-rgf" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="335" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GD9-pJ-b0S" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="440" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-fd-eN9" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="103" y="20" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iQ-on-flj" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="103" y="125" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="172-NE-urY" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="103" y="230" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6H-gR-qUB" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="103" y="335" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="luO-l9-kQN" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="103" y="440" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZC-6R-ANw">
+                                <rect key="frame" x="189" y="603" width="125" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnR-S5-Jud" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="199" y="20" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2G-tQ-mbl" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="199" y="125" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tD3-ZV-jub" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="199" y="230" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xva-1F-wC1" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="199" y="335" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4w4-fD-K7V" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="199" y="440" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pqy-fK-cqY" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="289" y="20" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-lE-kh4" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="289" y="125" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-J7-70I" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="289" y="230" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQ0-q9-4Vs" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="289" y="335" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-dF-VtS" customClass="PlayingCardView" customModule="Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="289" y="440" width="70" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVV-Ln-CjK">
+                                <rect key="frame" x="189" y="543" width="125" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="spr-Zk-2zS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dealCardsButton" destination="MJa-cv-sfa" id="ubz-nE-Uea"/>
+                        <outlet property="scoreLabel" destination="lZC-6R-ANw" id="kK9-Bh-jyp"/>
+                        <outletCollection property="setCards" destination="Fi4-46-aQG" collectionClass="NSMutableArray" id="2mI-RD-qKy"/>
+                        <outletCollection property="setCards" destination="MDS-fd-eN9" collectionClass="NSMutableArray" id="IgC-1J-SqO"/>
+                        <outletCollection property="setCards" destination="VnR-S5-Jud" collectionClass="NSMutableArray" id="REK-fF-gLi"/>
+                        <outletCollection property="setCards" destination="Pqy-fK-cqY" collectionClass="NSMutableArray" id="viy-Ct-2Q8"/>
+                        <outletCollection property="setCards" destination="Uh4-ep-4rx" collectionClass="NSMutableArray" id="P9h-LB-mls"/>
+                        <outletCollection property="setCards" destination="1iQ-on-flj" collectionClass="NSMutableArray" id="Oo6-qv-9Hb"/>
+                        <outletCollection property="setCards" destination="l2G-tQ-mbl" collectionClass="NSMutableArray" id="Gt1-B0-Toe"/>
+                        <outletCollection property="setCards" destination="Wjb-lE-kh4" collectionClass="NSMutableArray" id="nPU-Lu-Df3"/>
+                        <outletCollection property="setCards" destination="4rY-uQ-6Nb" collectionClass="NSMutableArray" id="CZh-8p-3Gt"/>
+                        <outletCollection property="setCards" destination="172-NE-urY" collectionClass="NSMutableArray" id="gGv-ha-BmU"/>
+                        <outletCollection property="setCards" destination="tD3-ZV-jub" collectionClass="NSMutableArray" id="zyg-4M-3OD"/>
+                        <outletCollection property="setCards" destination="WMd-J7-70I" collectionClass="NSMutableArray" id="HuM-SI-72i"/>
+                        <outletCollection property="setCards" destination="NXk-Im-rgf" collectionClass="NSMutableArray" id="i3g-gl-lkL"/>
+                        <outletCollection property="setCards" destination="A6H-gR-qUB" collectionClass="NSMutableArray" id="jCs-ng-v8v"/>
+                        <outletCollection property="setCards" destination="xva-1F-wC1" collectionClass="NSMutableArray" id="54W-gH-onQ"/>
+                        <outletCollection property="setCards" destination="FQ0-q9-4Vs" collectionClass="NSMutableArray" id="nCc-gx-1vl"/>
+                        <outletCollection property="setCards" destination="GD9-pJ-b0S" collectionClass="NSMutableArray" id="4f6-QX-MpV"/>
+                        <outletCollection property="setCards" destination="luO-l9-kQN" collectionClass="NSMutableArray" id="cdz-4Z-B0b"/>
+                        <outletCollection property="setCards" destination="4w4-fD-K7V" collectionClass="NSMutableArray" id="Q2M-cF-TWl"/>
+                        <outletCollection property="setCards" destination="a4K-dF-VtS" collectionClass="NSMutableArray" id="R1h-S4-Le5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+</document>
