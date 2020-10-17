@@ -1,1 +1,1 @@
-An iOS app for playing the card game Swift.
+An iOS app for playing the card game Set.
